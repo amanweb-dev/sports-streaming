@@ -4,14 +4,18 @@
 /* common styles or utilities start*/
 body{
     font-family: 'Poppins', sans-serif;
-    width: 1320px;
-    margin: 0 auto;
+    width: 100%;
     background-color: #ffffff;
-    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 /* common styles or utilities end*/
 
 /* Header Styles Start  */
+header{
+    width: 1250px;
+    margin: 0 auto;
+}
 .banner{
     background-color: black;
     display: grid;
@@ -23,14 +27,12 @@ body{
     
 }
 .banner .banner-content{
-    /* display: flex;
-    flex-direction: column; */
-    margin: 6.25em 1.5625em 6.25em 6.25em;
+    margin: 100px 25px 100px 100px;
 
 }
 .banner-content h1{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 4.375em;
     line-height: 80px;
     margin-bottom: 20px;
     margin-top: 0;
@@ -49,21 +51,86 @@ body{
     color: #ffffff;
     font-size: 20px;
     border-radius: 7px;
+    border: none;
+}
+.common-btn i{
+    margin-left: 15px;
+}
+.common-btn:hover {
+    background-color: #a31d9f;
+    color: #badfff;
+}
+.common-btn:hover.common-btn,.common-btn{
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
 }
 .banner-image{
     margin-right: 70px;
+   
+}
+.banner-image:hover img{
+    transform: scale(.7);
 }
 .banner-image img{
+    transition: transform .8s ease-in-out;
     width: 100%; 
     height: 100%;
     
 }
 
 /* responsive codes */
-/* @media only screen and (max-width:687px) {
+@media only screen and (max-width:767px) {
+    header{
+        width: 100%;
+    }
+    .banner {
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: #ffffff;
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+    .banner .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        margin: 0;
+        text-align: center;
+    }
+    .banner-content h1 {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    .banner-image {
+        margin-right: 0px;
+        padding: 0px 50px;
+    }
     
 }
 
-@media only screen and (min-width:688px) and (max-width:992px) {
-   
-} */
+@media only screen and (min-width:768px) and (max-width:992px) {
+    header{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .banner .banner-content {
+        margin: 25px 25px 50px 50px;
+    }
+    .banner-content h1 {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 60px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .banner-image{
+        margin-right: 20px;
+    }
+}
