@@ -1,0 +1,63 @@
+/*fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles or utilities start*/
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 1320px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+/* common styles or utilities end*/
+
+/* Header Styles Start  */
+.banner{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: #ffffff;
+    border-radius: 30px;
+    margin-top: 50px;
+    
+}
+.banner .banner-content{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 25px 100px 100px;
+
+}
+.banner-content h1{
+    font-weight: 700;
+    font-size: 4.375em;
+    line-height: 80px;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+}
+.banner-content p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.common-btn{
+    width: 187px;
+    height: 56px; 
+    background: #DD0000;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 7px;
+}
+.banner-image img{
+    width: 100%; 
+    height: 100%;
+}
+
+/* responsive codes */
+/* @media only screen and (max-width:687px) {
+    
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+   
+} */
