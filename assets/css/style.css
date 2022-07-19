@@ -7,6 +7,7 @@ body{
     width: 1320px;
     margin: 0 auto;
     background-color: #ffffff;
+    height: 100%;
 }
 /* common styles or utilities end*/
 
@@ -18,17 +19,18 @@ body{
     color: #ffffff;
     border-radius: 30px;
     margin-top: 50px;
+    padding-top: 30px;
     
 }
 .banner .banner-content{
-    display: flex;
-    flex-direction: column;
-    margin: 100px 25px 100px 100px;
+    /* display: flex;
+    flex-direction: column; */
+    margin: 6.25em 1.5625em 6.25em 6.25em;
 
 }
 .banner-content h1{
     font-weight: 700;
-    font-size: 4.375em;
+    font-size: 70px;
     line-height: 80px;
     margin-bottom: 20px;
     margin-top: 0;
@@ -48,9 +50,13 @@ body{
     font-size: 20px;
     border-radius: 7px;
 }
+.banner-image{
+    margin-right: 70px;
+}
 .banner-image img{
     width: 100%; 
     height: 100%;
+    
 }
 
 /* responsive codes */
