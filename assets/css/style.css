@@ -1,4 +1,4 @@
-/*fonts */
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* common styles or utilities start*/
@@ -9,14 +9,14 @@ body{
     padding: 0;
     margin: 0;
 }
-/* common styles or utilities end*/
-
-/* Header Styles Start  */
-
 header,.body-content{
     width: 1300px;
     margin: 0 auto;
 }
+/* common styles or utilities end*/
+
+/* Header Styles Start  */
+
 .banner{
     background-color: black;
     display: grid;
@@ -90,8 +90,14 @@ header,.body-content{
     height: 100%;
     
 }
+/*------------------------
+Header Styles end  
+--------------------------*/
 
-/* main area styles */
+
+/* ----------------
+main area styles start
+--------------------*/
 .container{
     display: grid;
     grid-template-columns: 350px repeat(1,1fr);
@@ -99,6 +105,10 @@ header,.body-content{
     margin-right: 40px;
     margin-bottom: 130px;
 }
+
+/* ---------------------
+Left sidebar style start  (aside)
+--------------------------*/
 .left-sidebar{
     width: 312px;
     height: 312px;
@@ -125,6 +135,14 @@ button.active-btn{
     color: #FFFFFF;
 }
 
+/* ---------------------
+Left sidebar style end  (aside)
+--------------------------*/
+
+
+/* -------------------------------------------
+Box content (main blog) style start  (aside)
+----------------------------------------------*/
 .all-live-box{
     display: grid;
     grid-template-columns: repeat(3,3fr);
@@ -135,7 +153,7 @@ button.active-btn{
 .single-live-box {
     box-shadow: 0px 0px 10px -6px;
     border-radius: 10px;
-    
+   
 }
 .box-cover-image img{
     width: 100%;
@@ -174,6 +192,7 @@ button.active-btn{
 .fa-clock,.fa-message{
     margin-right: 10px;
 }
+
 .show-more-btn button{
     background: #DD0000;
     border-radius: 5px;
@@ -185,6 +204,16 @@ button.active-btn{
     border: none;
     display: none;
 }
+
+/* ------------------------------------------
+Box content (main blog) style end  (aside)
+---------------------------------------------*/
+
+
+/* ------------------------------------------
+Footer (Bottom part) style start  (aside)
+---------------------------------------------*/
+
 .footer-area{
     background-color: #161616;
     width: 100%;
@@ -255,15 +284,54 @@ button.active-btn{
     color: #1DA1F2;
  }
 
+ /* ------------------------------------------
+Footer (Bottom part) style start  (aside)
+---------------------------------------------*/
+
+ /* -------------------------------------
+CSS For upcoming-match.html page  start
+-----------------------------------*/
+
+.box-cover-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-cover-image .team-flag{
+    padding: 25px 15px 25px 10px;
+}
+.box-cover-image .team-flag img{
+    width: 100px;
+    height: 56.18px;
+
+}
+.team-details{
+    text-align: center;
+}
+.team-details h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+    color: #161616;
+}
+.team-details p{
+    color: #4D4D4D;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ /* ----------------------
+CSS For upcoming-match.html page end 
+-----------------------------------*/
 
 
-/* responsive style codes */
+/*-------------------- responsive style codes----------------- */
 
-/*----------------------- 
+/*--------------------------------------------------------------------------
 Refferences : https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
 
 https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-width-for-mobile-responsive-design/
------------------------------*/
+------------------------------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
 
@@ -319,7 +387,6 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         flex-direction: column;
         margin: 0 20px;
     }
-
     .left-sidebar{
         width: 100%;
         height: 176px;
@@ -336,7 +403,6 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         width: 210px;
         height: 48px;
     }
-
     .all-live-box{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -383,7 +449,6 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         flex-direction: column;
         margin: 0 20px;
     }
-
     .left-sidebar{
         width: 100%;
         background-color: #ffffff;
@@ -405,14 +470,12 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         font-size: 20px;
         margin: 2px;
     }
-
     .all-live-box{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-
     .show-more-btn button {
         display: block;
         margin: 45px auto;
@@ -452,7 +515,6 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         flex-direction: column;
         margin: 0 20px;
     }
-
     .left-sidebar{
         width: 100%;
         background-color: #ffffff;
@@ -473,14 +535,12 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         font-weight: 500;
         font-size: 20px;
     }
-
     .all-live-box{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-
     .show-more-btn button {
         display: block;
         margin: 45px auto;
@@ -512,4 +572,13 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
     .footer-area{
         width: 100%;
    }
+
+   /* --------upcoming-match.html page responcive css---------- */
+   
+   .all-live-box{
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
 }
