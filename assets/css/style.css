@@ -12,7 +12,8 @@ body{
 /* common styles or utilities end*/
 
 /* Header Styles Start  */
-header,main{
+
+header,.body-content{
     width: 1300px;
     margin: 0 auto;
 }
@@ -41,7 +42,9 @@ header,main{
     margin-top: 0;
 
 }
+
 .banner-content p{
+    
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 30px;
@@ -190,9 +193,11 @@ button.active-btn{
 }
 .footer-area h1{
     color: #FFFFFF;
-    padding-top: 130px;
+    padding-top: 70px;
     margin-bottom: 0px;
     text-align: center;
+    font-weight: 600;
+    font-size: 40px;
 }
 .footer-area hr{
     margin: 50px 140px;
@@ -290,13 +295,24 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         margin-bottom: 5px;
         margin-top: 0;
     }
+    .content-details{
+        width: 200px;
+        height: 90px;
+        overflow: hidden;
+        display: block;
+        margin-bottom: 25px;
+    }
+    .content-details p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .banner-image {
         margin-right: 0px;
         padding: 0px 50px;
     }
-    main{
-        width: 100%;
-        
+    .body-content{
+        width: 100%;    
     }
     .container{
         display: flex;
@@ -359,7 +375,7 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
     .banner-image{
         margin-right: 20px;
     }
-    main{
+    .body-content{
         width: 100%;
     }
     .container{
@@ -428,7 +444,7 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
     .banner-image{
         margin-right: 20px;
     }
-    main{
+    .body-content{
         width: 100%;
     }
     .container{
@@ -469,4 +485,31 @@ https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-wid
         display: block;
         margin: 45px auto;
     }
+}
+@media only screen and (min-width:992px) and (max-width:1300px) {
+    header{
+        width:100%;
+        margin: 0;
+        padding: 0;
+    }
+    .body-content{
+        width: 100%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 300px repeat(1,1fr);
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 130px;
+    }
+    .left-sidebar {
+        width: 285px;
+    }
+    .left-sidebar button {
+        width: 250px;
+        
+    }
+    .footer-area{
+        width: 100%;
+   }
 }
